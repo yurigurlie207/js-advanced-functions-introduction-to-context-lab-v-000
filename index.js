@@ -4,7 +4,7 @@ let createEmployeeRecord = function(row){
     firstName: row[0],
     familyName: row[1],
       title: row[2],
-      payPerHour: row[3],
+      payPerHour: row[3]
   }
 
 }
