@@ -10,3 +10,5 @@ let createEmployeeRecord = function(row){
   }
 
 }
+
+let createEmployeeRecords = function(){}
