@@ -36,7 +36,7 @@ let createTimeOutEvent = function(employee, dateStamp){
     employee.timeOutEvents.push({
         type: "TimeOut",
         hour: parseInt(hour, 10),
-        date,
+        date: date
     })
 
     return employee
