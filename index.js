@@ -59,3 +59,27 @@ let wagesEarnedOnDate = function(employee, dateSought){
         * employee.payPerHour
     return parseFloat(rawWage.toString())
 }
+
+let allWagesFor = function(employee){
+    let eligibleDates = employee.timeInEvents.map(function(e){
+        return e.date
+    })
+
+    let payable = eligibleDates.reduce(function(memo, d){
+        return memo + wagesEarnedOnDate(employee, d)
+    }, 0)
+
+    return payable
+}
+
+let findEmployeeByFirstName = function(srcArray, firstName) {
+  return srcArray.find(function(rec){
+    return rec.firstName === firstName
+  })
+}
+
+let calculatePayroll = function(arrayOfEmployeeRecords){
+    return arrayOfEmployeeRecords.reduce(function(memo, rec){
+        return memo + allWagesFor(rec)
+    }, 0)
+}
