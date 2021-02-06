@@ -1,2 +1,2 @@
 // Your code here
-let createEmployeeRecord = function(){}
+let createEmployeeRecord = function(row){}
