@@ -1,7 +1,7 @@
 // Your code here
 let createEmployeeRecord = function(row){
   return {
-    firstname: row[0]
+    firstName: row[0]
   }
 
 }
